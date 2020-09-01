@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using TestScheduler.Models;
+using System.Security.Principal;
 
 namespace TestScheduler.Controllers
 {
@@ -21,9 +22,24 @@ namespace TestScheduler.Controllers
 
         public IActionResult Index()
         {
-            string text = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
-            ViewBag.userName = text.Replace("UICT\\", "");
-            ViewBag.accountType = System.Security.Principal.WindowsIdentity.GetCurrent().Groups;
+            //Get the username
+            string username = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
+            username = username.Replace("UICT\\", "");
+            ViewBag.username = username;
+            //Get usertype stackoverflow.com/questions/5309988/how-to-get-the-groups-of-a-user-in-active-directory-c-asp-net
+            List<string> result = new List<string>();
+            WindowsIdentity wi = new WindowsIdentity(username);
+            foreach (IdentityReference group in wi.Groups)
+            {
+                try
+                {
+                    result.Add(group.Translate(typeof(NTAccount)).ToString());
+                }
+                catch (Exception ex) { }
+            }
+            result.Sort();
+            ViewBag.userType = result;
+
             return View();
         }
 
