@@ -26,19 +26,36 @@ namespace TestScheduler.Controllers
             string username = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
             username = username.Replace("UICT\\", "");
             ViewBag.username = username;
+            bool isStaff = false;
             //Get usertype stackoverflow.com/questions/5309988/how-to-get-the-groups-of-a-user-in-active-directory-c-asp-net
-            List<string> result = new List<string>();
+            List<string> groups = new List<string>();
+            List<string> classes = new List<string>();
             WindowsIdentity wi = new WindowsIdentity(username);
+
+            Regex rx = new Regex(@"[A-Z][0-9]{3}");
             foreach (IdentityReference group in wi.Groups)
             {
                 try
                 {
-                    result.Add(group.Translate(typeof(NTAccount)).ToString());
+                    string txt = group.Translate(typeof(NTAccount)).ToString();
+                    txt = txt.Replace("UICT\\", "");
+                    if (rx.IsMatch(txt))
+                    {
+                        classes.Add(txt);
+                        Console.WriteLine(txt);
+                    }
+                    if (txt == "Staff")
+                    {
+                        isStaff = true;
+                    }
+                    groups.Add(txt);
                 }
                 catch (Exception ex) { }
             }
-            result.Sort();
-            ViewBag.userType = result;
+            classes.Sort();
+            ViewBag.classes = classes;
+            ViewBag.accountType = isStaff ? "Staff" : "Student";
+
 
             return View();
         }
