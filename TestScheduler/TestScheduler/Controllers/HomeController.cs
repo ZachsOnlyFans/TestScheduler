@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -20,11 +21,9 @@ namespace TestScheduler.Controllers
 
         public IActionResult Index()
         {
-            return View();
-        }
-
-        public IActionResult Privacy()
-        {
+            string text = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
+            ViewBag.userName = text.Replace("UICT\\", "");
+            ViewBag.accountType = System.Security.Principal.WindowsIdentity.GetCurrent().Groups;
             return View();
         }
 
