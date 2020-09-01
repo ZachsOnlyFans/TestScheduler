@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\0957146\\source\\repos\\TestScheduler\\TestScheduler\\TestScheduler.csproj": {}
+    "C:\\Users\\1938402\\Source\\Repos\\TestScheduler\\TestScheduler\\TestScheduler\\TestScheduler.csproj": {}
   },
   "projects": {
-    "C:\\Users\\0957146\\source\\repos\\TestScheduler\\TestScheduler\\TestScheduler.csproj": {
+    "C:\\Users\\1938402\\Source\\Repos\\TestScheduler\\TestScheduler\\TestScheduler\\TestScheduler.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\0957146\\source\\repos\\TestScheduler\\TestScheduler\\TestScheduler.csproj",
+        "projectUniqueName": "C:\\Users\\1938402\\Source\\Repos\\TestScheduler\\TestScheduler\\TestScheduler\\TestScheduler.csproj",
         "projectName": "TestScheduler",
-        "projectPath": "C:\\Users\\0957146\\source\\repos\\TestScheduler\\TestScheduler\\TestScheduler.csproj",
-        "packagesPath": "C:\\Users\\0957146\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\0957146\\source\\repos\\TestScheduler\\TestScheduler\\obj\\",
+        "projectPath": "C:\\Users\\1938402\\Source\\Repos\\TestScheduler\\TestScheduler\\TestScheduler\\TestScheduler.csproj",
+        "packagesPath": "C:\\Users\\1938402\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\1938402\\Source\\Repos\\TestScheduler\\TestScheduler\\TestScheduler\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\0957146\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\1938402\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
