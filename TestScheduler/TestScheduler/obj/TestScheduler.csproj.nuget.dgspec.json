@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\0957146\\source\\repos\\TestScheduler\\TestScheduler\\TestScheduler.csproj": {}
+    "C:\\Users\\0957146\\Source\\Repos\\TestScheduler\\TestScheduler\\TestScheduler\\TestScheduler.csproj": {}
   },
   "projects": {
-    "C:\\Users\\0957146\\source\\repos\\TestScheduler\\TestScheduler\\TestScheduler.csproj": {
+    "C:\\Users\\0957146\\Source\\Repos\\TestScheduler\\TestScheduler\\TestScheduler\\TestScheduler.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\0957146\\source\\repos\\TestScheduler\\TestScheduler\\TestScheduler.csproj",
+        "projectUniqueName": "C:\\Users\\0957146\\Source\\Repos\\TestScheduler\\TestScheduler\\TestScheduler\\TestScheduler.csproj",
         "projectName": "TestScheduler",
-        "projectPath": "C:\\Users\\0957146\\source\\repos\\TestScheduler\\TestScheduler\\TestScheduler.csproj",
+        "projectPath": "C:\\Users\\0957146\\Source\\Repos\\TestScheduler\\TestScheduler\\TestScheduler\\TestScheduler.csproj",
         "packagesPath": "C:\\Users\\0957146\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\0957146\\source\\repos\\TestScheduler\\TestScheduler\\obj\\",
+        "outputPath": "C:\\Users\\0957146\\Source\\Repos\\TestScheduler\\TestScheduler\\TestScheduler\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\0957146\\AppData\\Roaming\\NuGet\\NuGet.Config",
