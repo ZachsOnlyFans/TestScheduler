@@ -38,11 +38,13 @@ namespace TestScheduler.Controllers
                 try
                 {
                     string txt = group.Translate(typeof(NTAccount)).ToString();
+                    //Debug.WriteLine(txt);
                     txt = txt.Replace("UICT\\", "");
+
                     if (rx.IsMatch(txt))
                     {
                         classes.Add(txt);
-                        Console.WriteLine(txt);
+                        //Debug.WriteLine(txt);
                     }
                     if (txt == "Staff")
                     {
@@ -50,7 +52,9 @@ namespace TestScheduler.Controllers
                     }
                     groups.Add(txt);
                 }
-                catch (Exception ex) { }
+                catch (Exception ex) {
+                    Debug.WriteLine(ex.ToString());
+                }
             }
             classes.Sort();
             ViewBag.classes = classes;
