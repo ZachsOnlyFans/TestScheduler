@@ -48,8 +48,6 @@ C:\Users\d202staff\Source\Repos\TestScheduler\TestScheduler\TestScheduler\bin\De
 C:\Users\d202staff\Source\Repos\TestScheduler\TestScheduler\TestScheduler\obj\Debug\netcoreapp3.1\TestScheduler.csprojAssemblyReference.cache
 C:\Users\d202staff\Source\Repos\TestScheduler\TestScheduler\TestScheduler\obj\Debug\netcoreapp3.1\TestScheduler.AssemblyInfoInputs.cache
 C:\Users\d202staff\Source\Repos\TestScheduler\TestScheduler\TestScheduler\obj\Debug\netcoreapp3.1\TestScheduler.AssemblyInfo.cs
-C:\Users\d202staff\Source\Repos\TestScheduler\TestScheduler\TestScheduler\obj\Debug\netcoreapp3.1\TestScheduler.csproj.CoreCompileInputs.cache
-C:\Users\d202staff\Source\Repos\TestScheduler\TestScheduler\TestScheduler\obj\Debug\netcoreapp3.1\TestScheduler.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\d202staff\Source\Repos\TestScheduler\TestScheduler\TestScheduler\obj\Debug\netcoreapp3.1\TestScheduler.RazorAssemblyInfo.cache
 C:\Users\d202staff\Source\Repos\TestScheduler\TestScheduler\TestScheduler\obj\Debug\netcoreapp3.1\TestScheduler.RazorAssemblyInfo.cs
 C:\Users\d202staff\Source\Repos\TestScheduler\TestScheduler\TestScheduler\obj\Debug\netcoreapp3.1\TestScheduler.TagHelpers.input.cache
@@ -70,3 +68,14 @@ C:\Users\d202staff\Source\Repos\TestScheduler\TestScheduler\TestScheduler\obj\De
 C:\Users\d202staff\Source\Repos\TestScheduler\TestScheduler\TestScheduler\obj\Debug\netcoreapp3.1\TestScheduler.pdb
 C:\Users\d202staff\Source\Repos\TestScheduler\TestScheduler\TestScheduler\obj\Debug\netcoreapp3.1\TestScheduler.genruntimeconfig.cache
 C:\Users\d202staff\Source\Repos\TestScheduler\TestScheduler\TestScheduler\obj\Debug\netcoreapp3.1\TestScheduler.csproj.CopyComplete
+C:\Users\d202staff\Source\Repos\TestScheduler\TestScheduler\TestScheduler\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\d202staff\Source\Repos\TestScheduler\TestScheduler\TestScheduler\bin\Debug\netcoreapp3.1\System.DirectoryServices.dll
+C:\Users\d202staff\Source\Repos\TestScheduler\TestScheduler\TestScheduler\bin\Debug\netcoreapp3.1\System.DirectoryServices.AccountManagement.dll
+C:\Users\d202staff\Source\Repos\TestScheduler\TestScheduler\TestScheduler\bin\Debug\netcoreapp3.1\System.DirectoryServices.Protocols.dll
+C:\Users\d202staff\Source\Repos\TestScheduler\TestScheduler\TestScheduler\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\d202staff\Source\Repos\TestScheduler\TestScheduler\TestScheduler\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.dll
+C:\Users\d202staff\Source\Repos\TestScheduler\TestScheduler\TestScheduler\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.AccountManagement.dll
+C:\Users\d202staff\Source\Repos\TestScheduler\TestScheduler\TestScheduler\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.Protocols.dll
+C:\Users\d202staff\Source\Repos\TestScheduler\TestScheduler\TestScheduler\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\d202staff\Source\Repos\TestScheduler\TestScheduler\TestScheduler\obj\Debug\netcoreapp3.1\TestScheduler.csproj.CoreCompileInputs.cache
+C:\Users\d202staff\Source\Repos\TestScheduler\TestScheduler\TestScheduler\obj\Debug\netcoreapp3.1\TestScheduler.MvcApplicationPartsAssemblyInfo.cache
