@@ -66,8 +66,9 @@ namespace TestScheduler.Controllers
             return View();
         }
 
-        public IActionResult PasswordReset()
+        public IActionResult PasswordReset(string username)
         {
+            Debug.WriteLine("Helloo"+username);
             return View();
         }
 
