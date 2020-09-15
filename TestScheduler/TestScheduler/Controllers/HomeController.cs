@@ -40,7 +40,7 @@ namespace TestScheduler.Controllers
                 try
                 {
                     string txt = group.Translate(typeof(NTAccount)).ToString();
-                    Debug.WriteLine(txt);
+                    //Debug.WriteLine(txt);
                     txt = txt.Replace("UICT\\", "");
 
                     if (rx.IsMatch(txt))
@@ -66,10 +66,15 @@ namespace TestScheduler.Controllers
             return View();
         }
 
+        public IActionResult PasswordManager()
+        {
+            return View();
+        }
+
         public IActionResult PasswordReset(string username)
         {
-            Debug.WriteLine("Helloo"+username);
-            return View();
+            Debug.WriteLine("Helloo" + username);
+            return View("Helloo" + username);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
