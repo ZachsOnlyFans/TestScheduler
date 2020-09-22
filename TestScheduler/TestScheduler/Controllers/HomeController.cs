@@ -9,6 +9,8 @@ using Microsoft.Extensions.Logging;
 using TestScheduler.Models;
 using System.Security.Principal;
 using System.DirectoryServices.AccountManagement;
+using System.DirectoryServices;
+using Microsoft.AspNetCore.Identity;
 
 namespace TestScheduler.Controllers
 {
@@ -66,8 +68,10 @@ namespace TestScheduler.Controllers
             return View();
         }
 
-        public IActionResult PasswordManager()
+        public IActionResult PasswordManager(string userId)
         {
+            ViewBag.userId = userId;
+
             return View();
         }
 
@@ -75,7 +79,26 @@ namespace TestScheduler.Controllers
         {
             ViewBag.userId = userId;
 
-            return View("Success");
+            return ResetPassword(userId, "Default1") ? View("Success") : View("PasswordManager");
+        }
+
+        public static bool ResetPassword(string userName, string newPassword)
+        {
+            try {
+                //morgantechspace.com/2015/01/reset-ad-user-password-with-C-sharp.html
+                PrincipalContext context = new PrincipalContext(ContextType.Domain);
+                UserPrincipal user = UserPrincipal.FindByIdentity(context, IdentityType.SamAccountName, userName);
+                //Enable Account if it is disabled
+                user.Enabled = true;
+                //Reset User Password
+                user.SetPassword(newPassword);
+                //Force user to change password at next logon
+                user.ExpirePasswordNow();
+                //user.Save();
+                return true;
+            } catch {
+                return false;
+            }
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
