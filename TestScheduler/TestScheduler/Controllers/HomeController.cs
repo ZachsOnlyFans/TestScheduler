@@ -47,6 +47,7 @@ namespace TestScheduler.Controllers
 
                     if (rx.IsMatch(txt))
                     {
+                        //Match with module description
                         classes.Add(txt);
                         //Debug.WriteLine(txt);
                     }
@@ -99,6 +100,31 @@ namespace TestScheduler.Controllers
             } catch {
                 return false;
             }
+        }
+
+        public static bool UserIsStaff()
+        {
+            bool isStaff = false;
+            WindowsIdentity wi = new WindowsIdentity(System.Security.Principal.WindowsIdentity.GetCurrent().Name); 
+            foreach (IdentityReference group in wi.Groups)
+            {
+                try
+                {
+                    string txt = group.Translate(typeof(NTAccount)).ToString();
+                    //Debug.WriteLine(txt);
+                    txt = txt.Replace("UICT\\", "");
+                    if (txt == "ResetStudentPasswords")
+                    {
+                        isStaff = true;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine(ex.ToString());
+                }
+            }
+
+            return isStaff;
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.Server.IISIntegration;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using TestScheduler.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace TestScheduler
 {
@@ -26,6 +28,8 @@ namespace TestScheduler
         {
             services.AddControllersWithViews();
             services.AddAuthentication(IISDefaults.AuthenticationScheme);
+            services.AddDbContext<CourseContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
