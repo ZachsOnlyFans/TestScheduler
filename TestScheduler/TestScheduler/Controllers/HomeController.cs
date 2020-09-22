@@ -71,10 +71,11 @@ namespace TestScheduler.Controllers
             return View();
         }
 
-        public IActionResult PasswordReset(string username)
+        public IActionResult PasswordReset(string userId)
         {
-            Debug.WriteLine("Helloo" + username);
-            return View("Helloo" + username);
+            ViewBag.userId = userId;
+
+            return View("Success");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
