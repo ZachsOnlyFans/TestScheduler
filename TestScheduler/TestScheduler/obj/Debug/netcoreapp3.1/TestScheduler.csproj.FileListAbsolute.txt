@@ -564,3 +564,8 @@ C:\Users\d202staff\Source\Repos\ZachsOnlyFans\TestScheduler\TestScheduler\TestSc
 C:\Users\d202staff\Source\Repos\ZachsOnlyFans\TestScheduler\TestScheduler\TestScheduler\obj\Debug\netcoreapp3.1\TestScheduler.genruntimeconfig.cache
 C:\Users\d202staff\Source\Repos\ZachsOnlyFans\TestScheduler\TestScheduler\TestScheduler\obj\Debug\netcoreapp3.1\TestScheduler.csproj.CoreCompileInputs.cache
 C:\Users\d202staff\Source\Repos\ZachsOnlyFans\TestScheduler\TestScheduler\TestScheduler\obj\Debug\netcoreapp3.1\TestScheduler.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\d202staff\Source\Repos\ZachsOnlyFans\TestScheduler\TestScheduler\TestScheduler\obj\Debug\netcoreapp3.1\Razor\Views\Course\Create.cshtml.g.cs
+C:\Users\d202staff\Source\Repos\ZachsOnlyFans\TestScheduler\TestScheduler\TestScheduler\obj\Debug\netcoreapp3.1\Razor\Views\Course\Delete.cshtml.g.cs
+C:\Users\d202staff\Source\Repos\ZachsOnlyFans\TestScheduler\TestScheduler\TestScheduler\obj\Debug\netcoreapp3.1\Razor\Views\Course\Details.cshtml.g.cs
+C:\Users\d202staff\Source\Repos\ZachsOnlyFans\TestScheduler\TestScheduler\TestScheduler\obj\Debug\netcoreapp3.1\Razor\Views\Course\Edit.cshtml.g.cs
+C:\Users\d202staff\Source\Repos\ZachsOnlyFans\TestScheduler\TestScheduler\TestScheduler\obj\Debug\netcoreapp3.1\Razor\Views\Course\Index.cshtml.g.cs

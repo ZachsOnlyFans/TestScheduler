@@ -11,5 +11,10 @@ namespace TestScheduler.Models
         public string Module_Code { get; set; }
         public string Module_Description { get; set; }
         public string Level { get; set; }
+
+        public Course()
+        { 
+            
+        }
     }
 }

@@ -22,17 +22,32 @@ namespace TestScheduler.Controllers
         {
             _logger = logger;
         }
-
+        //Webpage
         public IActionResult Index()
+        {
+            var username = GetUsername();
+            var classList = GetClassList(username);
+            ViewBag.classes = classList;
+            ViewBag.accountType = IsStaff(username) ? "Staff Member: " : "Student: ";
+            return View();
+        }
+
+        public string GetUsername()
         {
             //Get the username
             string username = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
             username = username.Replace("UICT\\", "");
-            string displayName = UserPrincipal.Current.DisplayName;
-            ViewBag.username = displayName;
-            bool isStaff = false;
+            return username;
+        }
+
+        public string GetDisplayName()
+        {
+            return UserPrincipal.Current.DisplayName;
+        }
+
+        public List<string> GetClassList(string username)
+        {
             //Get usertype stackoverflow.com/questions/5309988/how-to-get-the-groups-of-a-user-in-active-directory-c-asp-net
-            List<string> groups = new List<string>();
             List<string> classes = new List<string>();
             WindowsIdentity wi = new WindowsIdentity(username);
 
@@ -42,33 +57,47 @@ namespace TestScheduler.Controllers
                 try
                 {
                     string txt = group.Translate(typeof(NTAccount)).ToString();
-                    //Debug.WriteLine(txt);
                     txt = txt.Replace("UICT\\", "");
-
                     if (rx.IsMatch(txt))
                     {
                         //Match with module description
                         classes.Add(txt);
-                        //Debug.WriteLine(txt);
                     }
-                    if (txt == "ResetStudentPasswords")
-                    {
-                        isStaff = true;
-                    }
-                    groups.Add(txt);
                 }
-                catch (Exception ex) {
+                catch (Exception ex)
+                {
                     Debug.WriteLine(ex.ToString());
                 }
             }
             classes.Sort();
-            ViewBag.classes = classes;
-            ViewBag.accountType = isStaff ? "Staff Member: " : "Student: ";
-
-
-            return View();
+            return classes;
         }
 
+        public bool IsStaff(string username)
+        {
+            WindowsIdentity wi = new WindowsIdentity(username);
+            Regex rx = new Regex(@"[A-Z][0-9]{3}");
+            foreach (IdentityReference group in wi.Groups)
+            {
+                try
+                {
+                    string txt = group.Translate(typeof(NTAccount)).ToString();
+                    //Debug.WriteLine(txt);
+                    txt = txt.Replace("UICT\\", "");
+                    if (txt == "ResetStudentPasswords")
+                    {
+                        return true;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine(ex.ToString());
+                }
+            }
+            return false;
+        }
+
+        //Webpage
         public IActionResult PasswordManager(string userId)
         {
             ViewBag.userId = userId;
@@ -100,31 +129,6 @@ namespace TestScheduler.Controllers
             } catch {
                 return false;
             }
-        }
-
-        public static bool UserIsStaff()
-        {
-            bool isStaff = false;
-            WindowsIdentity wi = new WindowsIdentity(System.Security.Principal.WindowsIdentity.GetCurrent().Name); 
-            foreach (IdentityReference group in wi.Groups)
-            {
-                try
-                {
-                    string txt = group.Translate(typeof(NTAccount)).ToString();
-                    //Debug.WriteLine(txt);
-                    txt = txt.Replace("UICT\\", "");
-                    if (txt == "ResetStudentPasswords")
-                    {
-                        isStaff = true;
-                    }
-                }
-                catch (Exception ex)
-                {
-                    Debug.WriteLine(ex.ToString());
-                }
-            }
-
-            return isStaff;
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

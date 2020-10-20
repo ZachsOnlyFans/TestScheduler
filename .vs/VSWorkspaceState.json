@@ -1,6 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\TestScheduler"
   ],
+  "SelectedNode": "\\TestScheduler\\TestScheduler.sln",
   "PreviewInSolutionExplorer": false
 }
