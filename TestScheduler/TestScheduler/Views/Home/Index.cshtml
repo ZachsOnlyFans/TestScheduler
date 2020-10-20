@@ -3,11 +3,5 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome @ViewBag.accountType @ViewBag.username</h1>
-    <ul>
-        @foreach (var x in ViewBag.classes)
-        {
-            <li>@x</li>
-        }
-    </ul>
+    <h1 class="display-4">Welcome @ViewBag.accountType @ViewBag.displayName</h1>
 </div>
