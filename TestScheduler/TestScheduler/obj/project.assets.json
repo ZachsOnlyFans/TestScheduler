@@ -9872,19 +9872,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\d202staff\\.nuget\\packages\\": {}
+    "C:\\Users\\0957146\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\d202staff\\Source\\Repos\\ZachsOnlyFans\\TestScheduler\\TestScheduler\\TestScheduler\\TestScheduler.csproj",
+      "projectUniqueName": "C:\\Users\\0957146\\Source\\Repos\\ZachsOnlyFans\\TestScheduler\\TestScheduler\\TestScheduler\\TestScheduler.csproj",
       "projectName": "TestScheduler",
-      "projectPath": "C:\\Users\\d202staff\\Source\\Repos\\ZachsOnlyFans\\TestScheduler\\TestScheduler\\TestScheduler\\TestScheduler.csproj",
-      "packagesPath": "C:\\Users\\d202staff\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\d202staff\\Source\\Repos\\ZachsOnlyFans\\TestScheduler\\TestScheduler\\TestScheduler\\obj\\",
+      "projectPath": "C:\\Users\\0957146\\Source\\Repos\\ZachsOnlyFans\\TestScheduler\\TestScheduler\\TestScheduler\\TestScheduler.csproj",
+      "packagesPath": "C:\\Users\\0957146\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\0957146\\Source\\Repos\\ZachsOnlyFans\\TestScheduler\\TestScheduler\\TestScheduler\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\d202staff\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\0957146\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

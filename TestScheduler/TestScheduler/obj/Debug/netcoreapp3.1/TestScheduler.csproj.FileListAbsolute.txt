@@ -566,3 +566,6 @@ C:\Users\d202staff\Source\Repos\ZachsOnlyFans\TestScheduler\TestScheduler\TestSc
 C:\Users\d202staff\Source\Repos\ZachsOnlyFans\TestScheduler\TestScheduler\TestScheduler\obj\Debug\netcoreapp3.1\TestScheduler.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\d202staff\Source\Repos\ZachsOnlyFans\TestScheduler\TestScheduler\TestScheduler\obj\Debug\netcoreapp3.1\Razor\Views\Course\Details.cshtml.g.cs
 C:\Users\d202staff\Source\Repos\ZachsOnlyFans\TestScheduler\TestScheduler\TestScheduler\obj\Debug\netcoreapp3.1\Razor\Views\Course\Index.cshtml.g.cs
+C:\Users\0957146\Source\Repos\ZachsOnlyFans\TestScheduler\TestScheduler\TestScheduler\obj\Debug\netcoreapp3.1\Razor\Views\Course\Details.cshtml.g.cs
+C:\Users\0957146\Source\Repos\ZachsOnlyFans\TestScheduler\TestScheduler\TestScheduler\obj\Debug\netcoreapp3.1\Razor\Views\Course\Index.cshtml.g.cs
+C:\Users\0957146\Source\Repos\ZachsOnlyFans\TestScheduler\TestScheduler\TestScheduler\obj\Debug\netcoreapp3.1\Razor\Views\Home\Scheduler.cshtml.g.cs
